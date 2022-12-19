@@ -1,0 +1,16 @@
+# fly.toml file generated for hello-vim-nano on 2022-12-18T18:53:49-05:00
+
+app = "hello-vim-nano"
+kill_signal = "SIGINT"
+kill_timeout = 5
+processes = []
+
+[mounts]
+source="hello_vim_nano_storage"
+destination="/storage"
+
+[env]
+
+[experimental]
+  allowed_public_ports = []
+  auto_rollback = true
